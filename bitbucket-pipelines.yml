@@ -1,0 +1,28 @@
+image: node:16
+
+pipelines:
+  default:
+    - parallel:
+        - step:
+            name: Project Linting
+            caches:
+              - node
+            script:
+              - npm install
+              - npm run lint
+    - parallel:
+        - step:
+            name: Unit and Integration Testing Project
+            caches:
+              - node
+            script:
+              - npm install
+              - npm run test
+    - parallel:
+        - step:
+            name: Build Project
+            caches:
+              - node
+            script:
+              - npm install
+              - npm run build
