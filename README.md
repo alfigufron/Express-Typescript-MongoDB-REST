@@ -6,6 +6,7 @@ For more details, check the feature list below.
 ## Features
 
 - **NoSQL database**: [MongoDB](https://www.mongodb.com) object data modeling using [Mongoose](https://mongoosejs.com)
+- **Develop tool**: using [nodemon](https://nodemon.io/)
 - **Authentication and authorization**: using [bcrypt](https://github.com/kelektiv/node.bcrypt.js)
 - **Validation**: request data validation using [exporess-validator](https://express-validator.github.io/)
 - **Logging**: using [winston](https://github.com/winstonjs/winston)
@@ -16,6 +17,8 @@ For more details, check the feature list below.
 - **CORS**: Cross-Origin Resource-Sharing enabled using [cors](https://github.com/expressjs/cors)
 - **Git hooks**: with [husky](https://github.com/typicode/husky) and [lint-staged](https://github.com/okonet/lint-staged)
 - **Linting**: with [ESLint](https://eslint.org) and [Prettier](https://prettier.io)
+- **Bitbucket pipelines support**
+- **Docker support**
 
 ## Commands
 
