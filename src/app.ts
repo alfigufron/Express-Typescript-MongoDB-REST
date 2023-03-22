@@ -1,6 +1,6 @@
 import * as express from "express";
 
-import { Express } from "express";
+import { Express, Request, Response } from "express";
 
 import env from "./config/env";
 import logger from "./config/logger";
@@ -28,6 +28,9 @@ const startService = () => {
   app.use(RequestHandlerMiddleware);
   app.use("/api", apiRouter());
   app.use(ErrorHandlerMiddlerware);
+  app.use((req: Request, res: Response) => {
+    res.status(404).send({ message: "Not Found" });
+  });
 
   app.listen(port, () => {
     console.clear();
